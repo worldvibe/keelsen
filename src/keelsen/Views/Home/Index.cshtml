@@ -2,109 +2,120 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="~/images/ASP-NET-Banners-01.png" alt="ASP.NET" class="img-responsive" />
-            <div class="carousel-caption">
-                <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default btn-default" href="http://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/Banner-02-VS.png" alt="Visual Studio" class="img-responsive" />
-            <div class="carousel-caption">
-                <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default btn-default" href="http://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/ASP-NET-Banners-02.png" alt="Package Management" class="img-responsive" />
-            <div class="carousel-caption">
-                <p>
-                    Bring in libraries from NuGet, Bower, and npm, and automate tasks using Grunt or Gulp.
-                    <a class="btn btn-default btn-default" href="http://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/Banner-01-Azure.png" alt="Microsoft Azure" class="img-responsive" />
-            <div class="carousel-caption">
-                <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default btn-default" href="http://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
 
-<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET MVC 6</li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=518007">Gulp</a> and <a href="http://go.microsoft.com/fwlink/?LinkId=518004">Bower</a> for managing client-side libraries</li>
-            <li>Theming using <a href="http://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
+<!-- =================================
+            ///// Begin intro slider section /////
+            ================================== -->
+<section id="intro-slider-section">
+
+    <!-- Begin content carousel (http://www.owlcarousel.owlgraphic.com)
+    ============================
+    * Use class "nav-outside" for outside nav.
+    * Use class "nav-rounded" for rounded nav.
+    * Use class "dots-outside" for outside dots.
+    * Use class "dots-left" or "dots-right" to align dots.
+    * Use class "dots-rounded" for rounded dots.
+    * Available carousel data attributes:
+            data-items="1".......................(items visible on desktop)
+            data-items-mobile-portrait="1".......(items visible on mobiles)
+            data-items-mobile-landscape="1"......(items visible on mobiles)
+            data-items-tablet="1"................(items visible on tablets)
+            data-loop="true".....................(true/false)
+            data-margin="10".....................(space between items)
+            data-center="false"..................(true/false)
+            data-start-position="0"..............(item start position)
+            data-animate-in="fadeIn".............(more animations: http://daneden.github.io/animate.css/)
+            data-animate-out="fadeOut"...........(more animations: http://daneden.github.io/animate.css/)
+            data-mouse-drag="true"...............(true/false)
+            data-autoheight="false"..............(true/false)
+            data-autoplay="true".................(true/false)
+            data-autoplay-timeout="5000".........(milliseconds)
+            data-autoplay-hover-pause="true".....(true/false)
+            data-autoplay-speed="800"............(milliseconds)
+            data-nav="true"......................(true/false)
+            data-nav-speed="800".................(milliseconds)
+            data-dots="true".....................(true/false)
+            data-dots-speed="800"................(milliseconds)
+    -->
+    <div class="owl-carousel nav-rounded dots-rounded dots-right" data-items="1" data-loop="true" data-nav="true" data-autoplay="true" data-autoplay-hover-pause="true" data-animate-in="fadeIn" data-animate-out="fadeOut">
+
+        <!-- Begin carousel item
+        =========================
+        * Use class "cc-item-h100", "cc-item-h150", "cc-item-h200", "cc-item-h250" ... up to "cc-item-h800" to change carousel item height.
+        * Use class "cc-item-h-full" for carousel item full height.
+        -->
+        <div class="cc-item cc-item-h-full bg-image" style="background-image: url(assets/img/intro/intro-bg-2.jpg); background-position: 50% 75%;">
+
+            <!-- Element cover -->
+            <div class="cover bg-transparent-5-dark"></div>
+
+            <!-- Begin carousel caption
+            ============================
+            * Use class "cc-caption-xs", "cc-caption-sm", "cc-caption-lg" or "cc-caption-xlg" to change caption size.
+            * Use class "bottom-left", "bottom-center", "bottom-right", "center-left", "center", "center-right", "top-left", "top-center", "top-right" to position carousel caption.
+            -->
+            <div class="cc-caption text-white center cc-caption-xlg">
+                <h1 class="cc-title">we are <span class="text-main">akto</span></h1>
+                <hr class="hr-short hr-white hr-big">
+                <p class="cc-description">creative design agency</p>
+            </div>
+            <!-- End carousel caption -->
+
+        </div>
+        <!-- End carousel item -->
+        <!-- Begin carousel item
+        =========================
+        * Use class "cc-item-h100", "cc-item-h150", "cc-item-h200", "cc-item-h250" ... up to "cc-item-h800" to change carousel item height.
+        * Use class "cc-item-h-full" for carousel item full height.
+        -->
+        <div class="cc-item cc-item-h-full bg-image" style="background-image: url(assets/img/intro/intro-bg-3.jpg); background-position: 50% 75%;">
+
+            <!-- Element cover -->
+            <div class="cover bg-transparent-5-dark"></div>
+
+            <!-- Begin carousel caption
+            ============================
+            * Use class "cc-caption-xs", "cc-caption-sm", "cc-caption-lg" or "cc-caption-xlg" to change caption size.
+            * Use class "bottom-left", "bottom-center", "bottom-right", "center-left", "center", "center-right", "top-left", "top-center", "top-right" to position carousel caption.
+            -->
+            <div class="cc-caption text-white center cc-caption-xlg">
+                <h1 class="cc-title">we are <span class="text-main">experts</span></h1>
+                <hr class="hr-short hr-white hr-big">
+                <p class="cc-description">more than just an IT company</p>
+            </div>
+            <!-- End carousel caption -->
+
+        </div>
+        <!-- End carousel item -->
+        <!-- Begin carousel item
+        =========================
+        * Use class "cc-item-h100", "cc-item-h150", "cc-item-h200", "cc-item-h250" ... up to "cc-item-h800" to change carousel item height.
+        * Use class "cc-item-h-full" for carousel item full height.
+        -->
+        <div class="cc-item cc-item-h-full bg-image" style="background-image: url(assets/img/intro/intro-bg-1.jpg); background-position: 50% 75%;">
+
+            <!-- Element cover -->
+            <div class="cover bg-transparent-1-dark"></div>
+
+            <!-- Begin carousel caption
+            ============================
+            * Use class "cc-caption-xs", "cc-caption-sm", "cc-caption-lg" or "cc-caption-xlg" to change caption size.
+            * Use class "bottom-left", "bottom-center", "bottom-right", "center-left", "center", "center-right", "top-left", "top-center", "top-right" to position carousel caption.
+            -->
+            <div class="cc-caption text-white center cc-caption-xlg">
+                <h1 class="cc-title">we make <span class="text-main">solutions</span></h1>
+                <hr class="hr-short hr-white hr-big">
+                <p class="cc-description">your idea, we will do the rest :)</p>
+            </div>
+            <!-- End carousel caption -->
+
+        </div>
+        <!-- End carousel item -->
+
     </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=699314">Add an appsetting in config and access it in app.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699318">Add client packages using Bower.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET 5</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET 5 such as Startup and middleware.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Run & Deploy</h2>
-        <ul>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=517852">Run your app on .NET Core</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=517853">Run commands in your project.json</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
-        </ul>
-    </div>
-</div>
+    <!-- End content carousel -->
+    <!-- Scroll down arrow -->
+    <a class="scroll-down-arrow sm-scroll text-center" href="#welcome-section"><span><i class="fa fa-arrow-down"></i></span></a>
+
+</section>
+<!-- End intro slider section -->
