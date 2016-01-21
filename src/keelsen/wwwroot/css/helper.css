@@ -236,7 +236,7 @@
  *  Text color classes
 /* ------------------------------------------------------------- */
 
-.text-main { color: #987F28 !important; } /* Template main color */
+.text-main { color: #6f919a !important; } /* Template main color */
 .text-white { color: #FFF !important; }
 .text-gray { color: #888 !important; }
 .text-gray-2 { color: #CCC !important; }
@@ -257,7 +257,7 @@
  *  Background color classes
 /* ------------------------------------------------------------- */
 
-.bg-main { background-color: #987F28 !important; } /* Template main color */
+.bg-main { background-color: #6f919a !important; } /* Template main color */
 .bg-white { background-color: #FFF !important; }
 .bg-gray { background-color: #999 !important; }
 .bg-gray-2 { background-color: #EEE !important; }

@@ -27,4 +27,11 @@ body {
   #logo img {
     height: 100%; }
 
+#footer img {
+  height: 100px;
+  margin-bottom: 20px; }
+
+#footer .section-inner {
+  padding: 80px 80px 40px 80px; }
+
 /* PAGES */
