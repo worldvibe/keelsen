@@ -1,5 +1,7 @@
-﻿body {
-
-   
+﻿.scroll-down-arrow span {
+    -webkit-animation: none;
+	animation: none;
+    &:hover {
+        color: #6f919a;
+    }
 }
-

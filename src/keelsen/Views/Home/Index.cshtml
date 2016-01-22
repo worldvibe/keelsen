@@ -3,114 +3,52 @@
 }
 
 
-<!-- =================================
-            ///// Begin intro slider section /////
-            ================================== -->
-<section id="intro-slider-section">
+<!-- ================================
+            ///// Begin intro video section /////
+            ================================= -->
+<section id="intro-video-section">
 
-    <!-- Begin content carousel (http://www.owlcarousel.owlgraphic.com)
-    ============================
-    * Use class "nav-outside" for outside nav.
-    * Use class "nav-rounded" for rounded nav.
-    * Use class "dots-outside" for outside dots.
-    * Use class "dots-left" or "dots-right" to align dots.
-    * Use class "dots-rounded" for rounded dots.
-    * Available carousel data attributes:
-            data-items="1".......................(items visible on desktop)
-            data-items-mobile-portrait="1".......(items visible on mobiles)
-            data-items-mobile-landscape="1"......(items visible on mobiles)
-            data-items-tablet="1"................(items visible on tablets)
-            data-loop="true".....................(true/false)
-            data-margin="10".....................(space between items)
-            data-center="false"..................(true/false)
-            data-start-position="0"..............(item start position)
-            data-animate-in="fadeIn".............(more animations: http://daneden.github.io/animate.css/)
-            data-animate-out="fadeOut"...........(more animations: http://daneden.github.io/animate.css/)
-            data-mouse-drag="true"...............(true/false)
-            data-autoheight="false"..............(true/false)
-            data-autoplay="true".................(true/false)
-            data-autoplay-timeout="5000".........(milliseconds)
-            data-autoplay-hover-pause="true".....(true/false)
-            data-autoplay-speed="800"............(milliseconds)
-            data-nav="true"......................(true/false)
-            data-nav-speed="800".................(milliseconds)
-            data-dots="true".....................(true/false)
-            data-dots-speed="800"................(milliseconds)
-    -->
-    <div class="owl-carousel nav-rounded dots-rounded dots-right" data-items="1" data-loop="true" data-nav="true" data-autoplay="true" data-autoplay-hover-pause="true" data-animate-in="fadeIn" data-animate-out="fadeOut">
+    <!-- Begin YTPlayer (Youtube video background)
+    ===============================================
+    NOTE: Replace videoURL with your own (videoURL:'your-youtube-video-URL').
+    Do not forget to add your background image for mobile devices (because the video background doesn't work on mobile devices).
+    More info about YTPlayer: https://github.com/pupunzi/jquery.mb.YTPlayer -->
+    <div class="youtube-bg full-height min-height-250"
+         style="background-image: url(assets/img/video/video-bg-2.jpg); background-position: 50% 50%;"
+         data-property="{
+					videoURL: 'https://www.youtube.com/watch?v=3vbnWyLzWbc',
+					containment: 'self',
+					startAt: 0,
+					stopAt: 0,
+					autoPlay: true,
+					loop: true,
+					mute: true,
+					showControls: false,
+					showYTLogo: false,
+					realfullscreen: true,
+					addRaster: false,
+					optimizeDisplay: true,
+					stopMovieOnBlur: true
+				}">
 
-        <!-- Begin carousel item
-        =========================
-        * Use class "cc-item-h100", "cc-item-h150", "cc-item-h200", "cc-item-h250" ... up to "cc-item-h800" to change carousel item height.
-        * Use class "cc-item-h-full" for carousel item full height.
-        -->
-        <div class="cc-item cc-item-h-full bg-image" style="background-image: url(images/videography.jpg); background-position: 50% 75%;">
+        <!-- Element cover -->
+        <div class="cover bg-transparent-8-dark"></div>
 
-            <!-- Element cover -->
-            <div class="cover bg-transparent-5-dark"></div>
-
-            <!-- Begin carousel caption
-            ============================
-            * Use class "cc-caption-xs", "cc-caption-sm", "cc-caption-lg" or "cc-caption-xlg" to change caption size.
-            * Use class "bottom-left", "bottom-center", "bottom-right", "center-left", "center", "center-right", "top-left", "top-center", "top-right" to position carousel caption.
-            -->
-            <div class="cc-caption text-white center cc-caption-xlg">
-                <h1 class="cc-title">we are <span class="text-main">Keelsen</span></h1>
-                <hr class="hr-short hr-white hr-big">
-                <p class="cc-description">creative design agency</p>
-            </div>
-            <!-- End carousel caption -->
-
+        <div class="intro-video-caption align-center text-white text-center">
+            <h1 class="intro-video-title">we are <span class="text-main">Keelsen</span></h1>
+            <hr class="hr-short hr-white hr-big">
+            <p class="intro-video-description">consulting agency</p>
+            <a href="#welcome-section" class="btn btn-primary margin-top-20 margin-right-5 sm-scroll">start now!</a>
+            <a href="#welcome-section" class="btn btn-white-bordered margin-top-20">read more</a>
         </div>
-        <!-- End carousel item -->
-        <!-- Begin carousel item -->
-        <div class="cc-item cc-item-h-full bg-image" style="background-image: url(images/videography.jpg); background-position: 50% 75%;">
-
-            <!-- Element cover -->
-            <div class="cover bg-transparent-5-dark"></div>
-
-            <!-- Begin carousel caption -->
-            <div class="cc-caption text-white center cc-caption-xlg">
-                <h1 class="cc-title">we are <span class="text-main">experts</span></h1>
-                <hr class="hr-short hr-white hr-big">
-                <p class="cc-description">more than just an IT company</p>
-            </div>
-            <!-- End carousel caption -->
-
-        </div>
-        <!-- End carousel item -->
-        <!-- Begin carousel item
-        =========================
-        * Use class "cc-item-h100", "cc-item-h150", "cc-item-h200", "cc-item-h250" ... up to "cc-item-h800" to change carousel item height.
-        * Use class "cc-item-h-full" for carousel item full height.
-        -->
-        <div class="cc-item cc-item-h-full bg-image" style="background-image: url(images/videography.jpg); background-position: 50% 75%;">
-
-            <!-- Element cover -->
-            <div class="cover bg-transparent-1-dark"></div>
-
-            <!-- Begin carousel caption
-            ============================
-            * Use class "cc-caption-xs", "cc-caption-sm", "cc-caption-lg" or "cc-caption-xlg" to change caption size.
-            * Use class "bottom-left", "bottom-center", "bottom-right", "center-left", "center", "center-right", "top-left", "top-center", "top-right" to position carousel caption.
-            -->
-            <div class="cc-caption text-white center cc-caption-xlg">
-                <h1 class="cc-title">we make <span class="text-main">solutions</span></h1>
-                <hr class="hr-short hr-white hr-big">
-                <p class="cc-description">your idea, we will do the rest :)</p>
-            </div>
-            <!-- End carousel caption -->
-
-        </div>
-        <!-- End carousel item -->
 
     </div>
-    <!-- End content carousel -->
+    <!-- End YTPlayer (Youtube video background) -->
     <!-- Scroll down arrow -->
     <a class="scroll-down-arrow sm-scroll text-center" href="#welcome-section"><span><i class="fa fa-arrow-down"></i></span></a>
 
 </section>
-<!-- End intro slider section -->
+<!-- End intro video section -->
 
 
 

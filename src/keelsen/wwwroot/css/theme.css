@@ -4378,9 +4378,10 @@ input[type=checkbox], input[type=radio] {
 	position: relative;
 	font-size: 21px;
 	color: #FFF;
-	-webkit-animation: mymove 1.4s infinite ease;
-	animation: mymove 1.4s infinite ease;
+	-webkit-animation: mymove 1.5s infinite ease;
+	animation: mymove 1.5s infinite ease;
 }
+
 @-webkit-keyframes mymove { /* Chrome, Safari, Opera */
     0% { top: 0; opacity: 0; }
     50% { opacity: 1; }
