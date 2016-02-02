@@ -20,6 +20,15 @@ body {
   margin-bottom: 15px; }
 
 /* ELEMENTS */
+.btn-primary.active,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary {
+  background-color: #375f69;
+  border-color: #375f69; }
+
 /* MODULES */
 #logo {
   height: 60px;

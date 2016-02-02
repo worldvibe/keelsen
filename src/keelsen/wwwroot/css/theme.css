@@ -1935,7 +1935,7 @@ body.no-scroll {
 }
 
 #post-comment-form {
-	background-color: #F1F1F1;
+	background-color: #eff1f1;
 	margin-top: 100px;
 	padding: 30px;
 }
@@ -2253,7 +2253,7 @@ body.no-scroll {
 }
 
 #contact-section .section-inner {
-	background-color: #F1F1F1;
+	background-color: #eff1f1;
 }
 
 address {
@@ -3156,7 +3156,7 @@ address {
 }
 .btn-default-bordered.active, .btn-default-bordered.focus, .btn-default-bordered:active, .btn-default-bordered:focus, .btn-default-bordered:hover, .open > .dropdown-toggle.btn-default-bordered {
 	color: #333;
-	background-color: #F1F1F1;
+	background-color: #eff1f1;
 	border-color: #ECECEC;
 }
 
@@ -3252,7 +3252,7 @@ address {
 	font-size: 16px;
 	color: #333;
 	text-decoration: none;
-	background-color: #F1F1F1;
+	background-color: #eff1f1;
 	border: 1px solid #EAEAEA;
 }
 .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
@@ -3424,7 +3424,7 @@ address {
 	float: none;
 }
 .nav-pills > li > a {
-	background-color: #f1f1f1;
+	background-color: #eff1f1;
 	margin-left: 0;
 	margin-right: 3px;
 	padding: 10px 24px;
