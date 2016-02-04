@@ -4,3 +4,15 @@ $hover: #eff1f1; // light blue gray
 $gray: #eff1f1;
 $action: #eff1f1;
 $action-hover: #eff1f1;
+
+$light-blue: #eff1f1;
+$dark-grey: #1a1a1a;
+$orange: #ce6908;
+
+#body-content, #header {
+    background-color: $dark-grey;
+}
+
+body {
+    color: #989a9a;
+}
