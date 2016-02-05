@@ -566,3 +566,18 @@ $(function () {
         target: '#onepage-navbar'
     })
 })
+
+
+
+
+
+
+
+
+
+/////////////////////////////
+// Choose random quote div
+/////////////////////////////
+
+var random = Math.floor(Math.random() * $('.randomQuote').length);
+$('.randomQuote').hide().eq(random).show();
