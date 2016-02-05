@@ -69,11 +69,21 @@ body {
   padding-left: 0;
   padding-right: 0; }
 
-.text-main {
-  color: #ce6908 !important; }
-
 #contact-section .section-inner {
   background-color: #2f2f30; }
+  #contact-section .section-inner a {
+    color: #6f919a; }
+  #contact-section .section-inner a:hover, #contact-section .section-inner a:focus {
+    color: #6f919a; }
+
+.info-box {
+  background-color: #2f2f30; }
+
+.info-box.ib-bordered {
+  border-color: #375f69; }
 
 .info-box.ib-bordered.ib-hover:hover {
-  border-color: #ce6908; }
+  border-color: #6f919a; }
+  .info-box.ib-bordered.ib-hover:hover .info-box-icon {
+    background-color: #141414;
+    transition: all 0.3s ease-in-out; }

@@ -1,18 +1,17 @@
-﻿$primary-mediumblue: #6f919a; // medium blue
-$secondary-darkblue: #375f69;  // dark blue 
-$hover: #eff1f1; // light blue gray
-$gray: #eff1f1;
-$action: #eff1f1;
-$action-hover: #eff1f1;
-
-$light-blue: #eff1f1;
-$dark-grey: #1a1a1a;
+﻿$light-blue: #eff1f1;  // light blue
+$medium-blue: #6f919a; // medium blue
+$dark-blue: #375f69;  // dark blue 
 $orange: #ce6908;
+
+$darkest-grey: #141414; // footer
+$dark-grey: #1a1a1a;  // background
+$medium-grey: #2f2f30;  //box backgrounds
+$text-grey: #989a9a;  //body text
 
 #body-content, #header {
     background-color: $dark-grey;
 }
 
 body {
-    color: #989a9a;
+    color: $text-grey;
 }

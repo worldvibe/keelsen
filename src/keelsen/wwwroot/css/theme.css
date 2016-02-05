@@ -12,11 +12,11 @@ body {
 	color: #333;
 }
 a {
-	color: #6f919a;
+	color: #ce6908;
 	text-decoration: none;
 }
 a:hover, a:focus {
-	color: #6f919a;
+	color: #ce6908;
 }
 a:focus {
 	outline: none;
@@ -204,7 +204,7 @@ hr {
 	display: inline-block;
 	width: 42px;
 	height: 7px;
-	background-image: url(../img/misc/hr.png);
+	background-image: url(../images/hr-blue.png);
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -219,7 +219,12 @@ hr {
 
 /* hr white */
 .hr-short.hr-white {
-	background-image: url(../img/misc/hr-white.png);
+	background-image: url(../images/hr-white.png);
+}
+
+/* hr orange */
+.hr-short.hr-orange {
+	background-image: url(../images/hr-orange.png);
 }
 
 /* hr big */
@@ -4377,7 +4382,7 @@ input[type=checkbox], input[type=radio] {
 .scroll-down-arrow span {
 	position: relative;
 	font-size: 21px;
-	color: #FFF;
+	color: #fff;
 	-webkit-animation: mymove 1.5s infinite ease;
 	animation: mymove 1.5s infinite ease;
 }
