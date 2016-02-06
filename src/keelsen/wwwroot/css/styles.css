@@ -103,3 +103,6 @@ body {
   -webkit-flex-flow: row wrap;
   align-content: flex-start;
   flex: 0; }
+
+.confirmation {
+  color: red; }

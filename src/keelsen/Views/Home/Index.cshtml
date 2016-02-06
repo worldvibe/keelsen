@@ -2,6 +2,9 @@
     ViewData["Title"] = "Home Page";
 }
 
+@using keelsen
+@model Mail
+
 
 <!-- =================================
             ///// Begin intro static section /////
@@ -185,43 +188,52 @@
 
                 <br>
 
-                <!-- Begin contact form -->
-                <form id="contact-form">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="your name" required>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="your email" required>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="subject" name="subject" placeholder="subject" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="form-group">
-                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="your message" required></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <button type="submit" class="btn btn-primary">send message</button>
-                        </div>
-                    </div>
-                </form>
-                <!-- End contact form -->
-
                 
+                <!-- Begin contact form -->
+                @if (Model != null && Model.Done)
+                {
+                    <div class="confirmation">Your message has been sent.</div>
+                }
+                else
+                {
+                    @using (Html.BeginForm("Index", "Home", new { ReturnUrl = "/home/index#contact-section" }, FormMethod.Post, new { @id = "contact-form", role = "form" }))
+                    {
+                                @Html.ValidationSummary()
+                                <fieldset>
 
-
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                @Html.TextBoxFor(m => m.Name, new { @placeholder = "your name", @type = "text", @class = "form-control" })
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                @Html.TextBoxFor(m => m.Email, new { @placeholder = "your email", @type = "email", @class = "form-control" })
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                @Html.TextBoxFor(m => m.Subject, new { @placeholder = "subject", @type = "text", @class = "form-control" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                @Html.TextAreaFor(m => m.Message, new { @placeholder = "your message", @class = "form-control", @rows = "5" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <button type="submit" value="send" name="submit" class="btn btn-primary">send message</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                    }
+                }
+                <!-- End contact form -->
 
             </div> <!-- /.col -->
         </div> <!-- /.row -->
