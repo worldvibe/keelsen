@@ -49,6 +49,9 @@ body {
   .navbar-default .navbar-nav > li > a:hover {
     color: #ce6908; }
 
+.navbar-toggle .icon-bar {
+  background-color: #6f919a !important; }
+
 #footer {
   background-color: #1a1a1a;
   padding-bottom: 0;
