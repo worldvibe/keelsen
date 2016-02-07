@@ -59,11 +59,12 @@
 
         <div class="col-md-8">
             <p>
-                We are a small group - with years of design, development, and business experience. Talk to us, and then let us weave together a solution to place your business front and center for your customers. 
+                We are a small group - with years of design, development, and business experience. We like to work with our clients, to sit and talk, and really get to know you.
             </p>
             <p>
-                It's our goal to build your online presence into an easy to understand and fuctional tool. We can help clear out the noise so that your customers can instantly find and connect with your business.
+                It's our goal to build your online presence into an easy to understand and fuctional tool. We can help clear out the noise so that your customers can instantly find and connect with your business. <a href="#contact-section" class="sm-scroll">Let us know how we can help you.</a>
             </p>
+          
         </div> <!-- /.col -->
     </div> <!-- /.row -->
     <!-- Begin info box wrap -->
@@ -192,11 +193,11 @@
                 <!-- Begin contact form -->
                 @if (Model != null && Model.Done)
                 {
-                    <div class="confirmation">Your message has been sent.</div>
+                    <div class="confirmation">Thank you - your message has been sent.</div>
                 }
                 else
                 {
-                    @using (Html.BeginForm("Index", "Home", new { ReturnUrl = "/home/index#contact-section" }, FormMethod.Post, new { @id = "contact-form", role = "form" }))
+                    @using (Html.BeginForm("Index", "Home", new { ReturnUrl = "/home/index" }, FormMethod.Post, new { @id = "contact-form", role = "form" }))
                     {
                                 @Html.ValidationSummary()
                                 <fieldset>

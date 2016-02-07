@@ -17,7 +17,7 @@ namespace keelsen.Controllers
         }
 
         [HttpPost]
-        public IActionResult Send(Mail Data)
+        public IActionResult Index(Mail Data)
         {
             if (ModelState.IsValid)
             {
@@ -25,7 +25,7 @@ namespace keelsen.Controllers
                 MailAddress from = new MailAddress(Data.Email);
                 message.Append("Name: " + Data.Name + "\n");
                 message.Append("Email: " + Data.Email + "\n");
-                message.Append("Subject: " + Data.Subject + "\n");
+                message.Append("Subject: " + Data.Subject + "\n\n");
                 message.Append(Data.Message);
 
                 MailMessage mail = new MailMessage();
@@ -37,19 +37,21 @@ namespace keelsen.Controllers
                 smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtp.UseDefaultCredentials = false;
 
-                smtp.Credentials = new System.Net.NetworkCredential("mailer@worldvibe.net", "AY5eJ7La2!fY5ge");
+                smtp.Credentials = new System.Net.NetworkCredential("mailer@keelsen.com", "M9IMpZmJvaWR");
                 smtp.EnableSsl = true;
 
                 mail.From = from;
                 mail.To.Add("info@keelsen.com");
-                mail.Subject = Data.Subject + " (" + Data.Email + ")";
+                mail.Subject = "Keelsen Contact Form: " + Data.Subject + " (" + Data.Email + ")";
                 mail.Body = message.ToString();
 
                 smtp.Send(mail);
+                Data.Done = true;
             }
-            return View();
+            return View(Data);
 
         }
+
 
         public IActionResult About()
         {
