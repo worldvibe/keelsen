@@ -25,8 +25,8 @@ namespace keelsen.Controllers
                 MailAddress from = new MailAddress(Data.Email);
                 message.Append("Name: " + Data.Name + "\n");
                 message.Append("Email: " + Data.Email + "\n");
-                message.Append("Subject: " + Data.Subject + "\n\n");
-                message.Append(Data.Message);
+                message.Append("Subject: " + Data.Subject + "\n");
+                message.Append("Subject: \n" + Data.Message);
 
                 MailMessage mail = new MailMessage();
 
