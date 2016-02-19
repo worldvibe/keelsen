@@ -75,6 +75,10 @@ body {
   padding-left: 0;
   padding-right: 0; }
 
+.intro-static-title {
+  line-height: 1.1;
+  display: block; }
+
 #contact-section .section-inner {
   background-color: #2f2f30; }
   #contact-section .section-inner a {
