@@ -41,7 +41,7 @@ namespace keelsen.Controllers
                 smtp.EnableSsl = true;
 
                 mail.From = from;
-                mail.To.Add("info@keelsen.com");
+                mail.To.Add("company@keelsen.com");
                 mail.Subject = "Keelsen Contact Form: " + Data.Subject + " (" + Data.Email + ")";
                 mail.Body = message.ToString();
 
