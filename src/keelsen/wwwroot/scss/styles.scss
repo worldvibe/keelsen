@@ -4,13 +4,16 @@
 /* BASE */
 @import "skeleton/colors.scss";
 @import "skeleton/typography.scss";
+@import "skeleton/flex.scss";
 
 /* ELEMENTS */
 @import "elements/buttons.scss";
+@import "elements/scroll_arrow.scss";
 
 /* MODULES */
-@import "modules/navbar.scss";
+@import "modules/header.scss";
 @import "modules/footer.scss";
+@import "modules/contact.scss";
 
 /* PAGES */
 @import "pages/index.scss";

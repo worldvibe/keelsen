@@ -1,16 +1,10 @@
-﻿.scroll-down-arrow span {
-    -webkit-animation: none;
-	animation: none;
-        transition: all 0.2s ease-in-out;
-
-    &:hover {
-        color: $medium-blue;
-    }
-}
-
-#intro-static-section {
+﻿#intro-static-section {
     padding-left: 0;
     padding-right: 0;
+    padding-top: 86px;
+    .full-height {
+        height: calc(85vh - 200px) !important;
+    }
 }
 .intro-static-title {
     line-height: 1.1;
@@ -21,19 +15,7 @@
     // color: $orange !important;
 }
 
-#contact-section .section-inner {
-    background-color: $medium-grey;
-    a {
-	color: $medium-blue;
-    }
-    a:hover, a:focus {
-	    color: $medium-blue;
-    }
-}
 
-.form-control {
-    // background-color: #cbcbcd;
-}
 
 .info-box {
     background-color: $medium-grey;
@@ -51,29 +33,9 @@
     }
 }
 
-#services-section .btn-link {
-  //  color: $orange;
-}
-
-
-
-// FLEX
-
-.row-flex, .row-flex > div[class*='col-'] {  
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex:1 1 auto;
-}
-
-.row-flex-wrap {
-	-webkit-flex-flow: row wrap;
-    align-content: flex-start;
-    flex:0;
-}
-
-.confirmation {
-    color: $orange;
+#services-section {
+    padding-top: 47px;
+    .btn-link {
+    //  color: $orange;
+    }
 }

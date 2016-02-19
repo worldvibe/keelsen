@@ -28,6 +28,22 @@ body {
   margin-top: 10px;
   margin-bottom: 15px; }
 
+.row-flex, .row-flex > div[class*='col-'] {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 1 auto; }
+
+.row-flex-wrap {
+  -webkit-flex-flow: row wrap;
+  align-content: flex-start;
+  flex: 0; }
+
+.confirmation {
+  color: #ce6908; }
+
 /* ELEMENTS */
 .btn-primary.active,
 .btn-primary.focus,
@@ -37,6 +53,13 @@ body {
 .open > .dropdown-toggle.btn-primary {
   background-color: #375f69;
   border-color: #375f69; }
+
+.scroll-down-arrow span {
+  -webkit-animation: none;
+  animation: none;
+  transition: all 0.2s ease-in-out; }
+  .scroll-down-arrow span:hover {
+    color: #6f919a; }
 
 /* MODULES */
 #logo {
@@ -63,28 +86,24 @@ body {
   #footer .section-inner {
     padding: 80px 80px 40px 80px; }
 
-/* PAGES */
-.scroll-down-arrow span {
-  -webkit-animation: none;
-  animation: none;
-  transition: all 0.2s ease-in-out; }
-  .scroll-down-arrow span:hover {
-    color: #6f919a; }
-
-#intro-static-section {
-  padding-left: 0;
-  padding-right: 0; }
-
-.intro-static-title {
-  line-height: 1.1;
-  display: block; }
-
 #contact-section .section-inner {
   background-color: #2f2f30; }
   #contact-section .section-inner a {
     color: #6f919a; }
   #contact-section .section-inner a:hover, #contact-section .section-inner a:focus {
     color: #6f919a; }
+
+/* PAGES */
+#intro-static-section {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 86px; }
+  #intro-static-section .full-height {
+    height: calc(85vh - 200px) !important; }
+
+.intro-static-title {
+  line-height: 1.1;
+  display: block; }
 
 .info-box {
   background-color: #2f2f30; }
@@ -98,18 +117,5 @@ body {
     background-color: #141414;
     transition: all 0.3s ease-in-out; }
 
-.row-flex, .row-flex > div[class*='col-'] {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex: 1 1 auto; }
-
-.row-flex-wrap {
-  -webkit-flex-flow: row wrap;
-  align-content: flex-start;
-  flex: 0; }
-
-.confirmation {
-  color: #ce6908; }
+#services-section {
+  padding-top: 47px; }
