@@ -87,19 +87,21 @@ body {
     padding: 80px 80px 40px 80px; }
 
 #contact-section .section-inner {
-  background-color: #2f2f30; }
+  background-color: #2f2f30;
+  clear: both; }
   #contact-section .section-inner a {
     color: #6f919a; }
   #contact-section .section-inner a:hover, #contact-section .section-inner a:focus {
     color: #6f919a; }
+
+.info-box-wrap {
+  clear: both; }
 
 /* PAGES */
 #intro-static-section {
   padding-left: 0;
   padding-right: 0;
   padding-top: 86px; }
-  #intro-static-section .full-height {
-    height: calc(85vh - 200px) !important; }
 
 .intro-static-title {
   line-height: 1.1;
@@ -116,6 +118,3 @@ body {
   .info-box.ib-bordered.ib-hover:hover .info-box-icon {
     background-color: #141414;
     transition: all 0.3s ease-in-out; }
-
-#services-section {
-  padding-top: 47px; }
