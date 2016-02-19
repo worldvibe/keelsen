@@ -28,6 +28,9 @@ body {
   margin-top: 10px;
   margin-bottom: 15px; }
 
+.h2, h2 {
+  font-size: 35px; }
+
 .row-flex, .row-flex > div[class*='col-'] {
   display: -webkit-box;
   display: -moz-box;
@@ -97,11 +100,15 @@ body {
 .info-box-wrap {
   clear: both; }
 
+#about-section {
+  padding: 100px 0 0 0; }
+  #about-section .section-inner {
+    background-color: #141414; }
+
 /* PAGES */
 #intro-static-section {
   padding-left: 0;
-  padding-right: 0;
-  padding-top: 86px; }
+  padding-right: 0; }
 
 .intro-static-title {
   line-height: 1.1;
