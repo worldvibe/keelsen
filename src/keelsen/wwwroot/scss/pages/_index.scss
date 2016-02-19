@@ -13,28 +13,3 @@
 .text-main {
     // color: $orange !important;
 }
-
-
-
-.info-box {
-    background-color: $medium-grey;
-}
-
-.info-box.ib-bordered {
-    border-color: $dark-blue;
-}
-
-.info-box.ib-bordered.ib-hover:hover {
-    border-color: $medium-blue;
-    .info-box-icon {
-        background-color: $darkest-grey;
-        transition: all 0.3s ease-in-out;
-    }
-}
-
-#services-section {
-    // padding-top: 47px;
-    .btn-link {
-    //  color: $orange;
-    }
-}
