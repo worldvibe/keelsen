@@ -37,7 +37,7 @@ namespace keelsen.Controllers
                 smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtp.UseDefaultCredentials = false;
 
-                smtp.Credentials = new System.Net.NetworkCredential("mailer@keelsen.com", "M9IMpZmJvaWR");
+                smtp.Credentials = new System.Net.NetworkCredential("company@keelsen.com", "K33ls3n2188#");
                 smtp.EnableSsl = true;
 
                 mail.From = from;
